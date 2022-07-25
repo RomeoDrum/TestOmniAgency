@@ -1,0 +1,236 @@
+.advantages {
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.advantages__item--town,
+.advantages__item--bridge {
+  background-color: @base-bg-color;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.advantages__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    width: 70%;
+  }
+}
+
+.advantages__number {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+}
+
+.advantages__text {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 30px 15px;
+}
+
+.advantages__item--places,
+.advantages__item--way,
+.advantages__item--tourists {
+  background-color: @advantages-bg-color;
+  text-align: center;
+  border-bottom: #d6d6d6 1px solid;
+
+  @media (min-width: @tablet-width) {
+    min-height: 256px;
+  }
+}
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__item--recommend {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-template-rows: 40px 1fr;
+  margin: 25px 20px;
+  padding: 0;
+  gap: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 35px;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.advantages__item--recommend .advantages__icon {
+  grid-column: ~"1/2";
+  grid-row: ~"1/2";
+}
+
+.advantages__item--recommend .advantages__title {
+  grid-column: ~"2/3";
+  grid-row: ~"1/2";
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.advantages__item--recommend .advantages__text {
+  grid-column: ~"2/3";
+  grid-row: ~"2/3";
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
+    margin: 0;
+    padding: 0;
+  }
+
+  .advantages__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .advantages__item--town {
+    grid-column: ~"1/2";
+    grid-row: ~"1/2";
+  }
+
+  .advantages__item--street {
+    grid-column: ~"2/4";
+    grid-row: ~"1/2";
+  }
+
+  .advantages__item--housing {
+    grid-column: ~"1/2";
+    grid-row: ~"2/3";
+  }
+
+  .advantages__item--food {
+    grid-column: ~"2/3";
+    grid-row: ~"2/3";
+  }
+
+  .advantages__item--souvenirs {
+    grid-column: ~"3/4";
+    grid-row: ~"2/3";
+  }
+
+  .advantages__item--canyon {
+    grid-column: ~"1/3";
+    grid-row: ~"3/4";
+  }
+
+  .advantages__item--bridge {
+    grid-column: ~"3/4";
+    grid-row: ~"3/4";
+  }
+
+  .advantages__item--places {
+    grid-column: ~"1/2";
+    grid-row: ~"4/5";
+  }
+
+  .advantages__item--way {
+    grid-column: ~"2/3";
+    grid-row: ~"4/5";
+  }
+
+  .advantages__item--tourists {
+    grid-column: ~"3/4";
+    grid-row: ~"4/5";
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+  }
+
+  .advantages__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .advantages__item--town {
+    grid-column: ~"1/2";
+    grid-row: ~"1/2";
+  }
+
+  .advantages__item--street {
+    grid-column: ~"2/4";
+    grid-row: ~"1/2";
+  }
+
+  .advantages__item--housing {
+    grid-column: ~"1/2";
+    grid-row: ~"2/3";
+  }
+
+  .advantages__item--food {
+    grid-column: ~"2/3";
+    grid-row: ~"2/3";
+  }
+
+  .advantages__item--souvenirs {
+    grid-column: ~"3/4";
+    grid-row: ~"2/3";
+  }
+
+  .advantages__item--canyon {
+    grid-column: ~"1/3";
+    grid-row: ~"3/4";
+  }
+
+  .advantages__item--bridge {
+    grid-column: ~"3/4";
+    grid-row: ~"3/4";
+  }
+
+  .advantages__item--places {
+    grid-column: ~"1/2";
+    grid-row: ~"4/5";
+  }
+
+  .advantages__item--way {
+    grid-column: ~"2/3";
+    grid-row: ~"4/5";
+  }
+
+  .advantages__item--tourists {
+    grid-column: ~"3/4";
+    grid-row: ~"4/5";
+  }
+}

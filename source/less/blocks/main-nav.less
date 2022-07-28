@@ -1,0 +1,121 @@
+.main-nav {
+  background-color: #fafafa;
+  width: 100%;
+  margin: 0;
+}
+
+.main-nav--closed {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: min-content min-content min-content;
+}
+
+.main-nav__toggle {
+  width: 28px;
+  height: 28px;
+  border: none;
+  padding: 0;
+  margin: 36px 0 0 20px;
+}
+
+.main-nav--closed .main-nav__toggle {
+  grid-column: ~"1/2";
+  grid-row: ~"1/2";
+  background: #fafafa url("../img/icon-burger.svg") no-repeat center;
+}
+
+.main-nav--closed .main-nav__logo {
+  background: #fafafa url("../img/icon-logo-nav.svg") no-repeat center;
+  width: 151px;
+  height: 33px;
+  grid-column: ~"2/3";
+  grid-row: ~"1/2";
+  margin: 35px auto auto auto;
+}
+
+.main-nav::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 70px;
+  left: 5%;
+  right: 5%;
+  height: 1px;
+  background: #a4a4a4;
+  min-width: 351px;
+}
+
+.main-nav__basket {
+  background: #fafafa url("../img/icon-basket.svg") no-repeat center;
+  width: 28px;
+  height: 24px;
+  border: none;
+  grid-column: ~"3/4";
+  grid-row: ~"1/2";
+  padding: 0;
+  margin: 38px 20px 0 auto;
+}
+
+.main-nav__social-list {
+  grid-column: ~"2/3";
+  grid-row: ~"2/3";
+  padding: 0;
+  margin: 14px 0 0 0;
+}
+
+.main-nav__phone {
+  grid-column: ~"1/-1";
+  grid-row: ~"3/4";
+  text-decoration: none;
+  margin: auto;
+}
+
+.main-nav--closed .main-nav__search {
+  display: none;
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+
+.main-nav--opened {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+}
+
+.main-nav--opened .main-nav__toggle {
+  background: #fafafa url("../img/icon-close.svg") no-repeat center;
+  grid-column: ~"1/2";
+  grid-row: ~"1/2";
+}
+
+.main-nav--opened .main-nav__search {
+  background: #fafafa url("../img/icon-search.svg") no-repeat center;
+  border: none;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  margin: 30px 20px auto auto;
+  grid-column: ~"2/3";
+  grid-row: ~"1/2";
+}
+
+.main-nav--opened .main-nav__social-list {
+  display: none;
+}
+
+.main-nav--opened .main-nav__logo {
+  display: none;
+}
+
+.main-nav--opened .main-nav__phone {
+  display: none;
+}
+
+.main-nav--opened .main-nav__list {
+  grid-column: ~"1/-1";
+  grid-row: ~"2/3";
+  display: flex;
+  flex-direction: column;
+}

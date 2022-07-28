@@ -1,0 +1,32 @@
+.sign {
+  display: grid;
+  grid-template-columns: 55px auto;
+  grid-template-rows: auto auto;
+  column-gap: 14px;
+  width: 90%;
+  margin: 0 5% 50px 5%;
+}
+
+.sign__icon {
+  background: #fafafa url("../img/icon-sign.png") no-repeat center top;
+  width: 51px;
+  height: 52px;
+  grid-column: ~"1/2";
+  grid-row: ~"1/-1";
+  margin: 0;
+}
+
+.sign__post {
+  grid-column: ~"2/3";
+  grid-row: ~"1/2";
+  margin: 0;
+  color: #776157;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.sign__holder {
+  grid-column: ~"2/3";
+  grid-row: ~"2/3";
+  margin: 0;
+}

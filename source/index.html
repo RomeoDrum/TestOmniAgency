@@ -11,11 +11,13 @@
 </head>
 <body class="page-body">
   <header class="page-header">
-    <nav class="main-nav main-nav--opened">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__logo logo"></div>
-      <button class="main-nav__search" type="button"></button>
-      <button class="main-nav__basket" type="button"></button>
+    <nav class="main-nav main-nav--closed">
+      <div class="main-nav__wrapper">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__logo logo"></div>
+        <button class="main-nav__search" type="button"></button>
+        <button class="main-nav__basket" type="button"></button>
+      </div>
       <ul class="main-nav__social-list social">
         <li class="social__item social__item--tg">
           <a class="social__link social__link--tg" href="#"></a>
@@ -52,25 +54,25 @@
             <ul class="about__list">
               <li class="about__item">
                 <a class="about__link" href="#">
-                  <div class="about__icon"></div>
+                  <div class="about__icon about__icon--factory"></div>
                   <p class="about__text">Наша компания</p>
                 </a>
               </li>
               <li class="about__item">
                 <a class="about__link" href="#">
-                  <div class="about__icon"></div>
+                  <div class="about__icon about__icon--history"></div>
                   <p class="about__text">История комбината</p>
                 </a>
               </li>
               <li class="about__item">
                 <a class="about__link" href="#">
-                  <div class="about__icon"></div>
+                  <div class="about__icon about__icon--docs"></div>
                   <p class="about__text">Документы</p>
                 </a>
               </li>
               <li class="about__item">
                 <a class="about__link" href="#">
-                  <div class="about__icon"></div>
+                  <div class="about__icon about__icon--foto"></div>
                   <p class="about__text">Фото-видео</p>
                 </a>
               </li>
@@ -88,17 +90,21 @@
   <main class="page-main">
     <section class="page-main__intro intro">
       <div class="intro__wrapper">
-        <div class="intro__logo"></div>
-        <h1 class="intro__title">Володарский мукомольный комбинат</h1>
+        <img class="intro__logo" src="img/mill.png" width="143" height="183" alt="Володарский МК"></img>
+        <h1 class="intro__title"><span>Володарский</span> мукомольный комбинат</h1>
       </div>
       <div class="intro__slider slider">
-        <div class="slider__scrumbs"></div>
+        <div class="slider__pagination">
+          <button class="slider__pag slider__pag--active"></button>
+          <button class="slider__pag"></button>
+          <button class="slider__pag"></button>
+        </div>
         <h2 class="slider__title">Индивидуальный подход к каждому клиенту</h2>
         <p class="slider__text">Персональный менеджер и сопровождение 24/7</p>
         <button class="slider__button" type="button">Заказать доставку</button>
       </div>
       <div class="intro__preview preview">
-        <video class="preview__video"></video>
+        <img class="preview__video" src="img/video.jpg" width="352" height="200" alt="Видео"></img>
         <h3 class="preview__title">Крупнейший поставщик муки в Нижегородской области</h3>
         <p class="preview__text">Мукомольный комбинат Володарский — радует людей вкусным хлебом. В этом нам помогает качественное и экологическое сырье, индивидуальный подход к клиентам и квалифицированные сотрудники, всегда готовые помочь</p>
         <div class="preview__sign sign">

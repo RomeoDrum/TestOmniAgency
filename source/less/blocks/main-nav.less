@@ -6,7 +6,7 @@
 
 .main-nav--closed {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
   grid-template-rows: min-content min-content min-content;
 }
 
@@ -15,25 +15,21 @@
   height: 28px;
   border: none;
   padding: 0;
-  margin: 36px 0 0 20px;
 }
 
 .main-nav--closed .main-nav__toggle {
-  grid-column: ~"1/2";
-  grid-row: ~"1/2";
   background: #fafafa url("../img/icon-burger.svg") no-repeat center;
+  margin: 36px 0 0 5%;
 }
 
-.main-nav--closed .main-nav__logo {
+.main-nav .main-nav__logo {
   background: #fafafa url("../img/icon-logo-nav.svg") no-repeat center;
   width: 151px;
   height: 33px;
-  grid-column: ~"2/3";
-  grid-row: ~"1/2";
   margin: 35px auto auto auto;
 }
 
-.main-nav::after {
+.main-nav--closed::after {
   content: "";
   position: absolute;
   display: block;
@@ -50,14 +46,15 @@
   width: 28px;
   height: 24px;
   border: none;
-  grid-column: ~"3/4";
-  grid-row: ~"1/2";
   padding: 0;
-  margin: 38px 20px 0 auto;
+}
+
+.main-nav--closed .main-nav__basket {
+  margin: 38px 5% 0 0;
 }
 
 .main-nav__social-list {
-  grid-column: ~"2/3";
+  grid-column: ~"1/-1";
   grid-row: ~"2/3";
   padding: 0;
   margin: 14px 0 0 0;
@@ -79,15 +76,20 @@
 }
 
 .main-nav--opened {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .main-nav--opened .main-nav__toggle {
   background: #fafafa url("../img/icon-close.svg") no-repeat center;
-  grid-column: ~"1/2";
-  grid-row: ~"1/2";
+  margin: 30px auto 0 5%;
+  background-color: #ffffff;
 }
 
 .main-nav--opened .main-nav__search {
@@ -96,9 +98,13 @@
   width: 28px;
   height: 28px;
   padding: 0;
-  margin: 30px 20px auto auto;
-  grid-column: ~"2/3";
-  grid-row: ~"1/2";
+  margin: 31px 20px auto auto;
+  background-color: #ffffff;
+}
+
+.main-nav--opened .main-nav__basket {
+  margin: 30px 5% 0 0;
+  background-color: #ffffff;
 }
 
 .main-nav--opened .main-nav__social-list {
@@ -114,8 +120,21 @@
 }
 
 .main-nav--opened .main-nav__list {
-  grid-column: ~"1/-1";
-  grid-row: ~"2/3";
   display: flex;
   flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 14px 5% 0 5%;
+}
+
+.main-nav__item {
+  padding: 12px 0 12px 0;
+  border-bottom: #b69d86 solid 1px;
+}
+
+.main-nav__link {
+  color: #664b42;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
 }

@@ -5,6 +5,12 @@
   column-gap: 14px;
   width: 90%;
   margin: 0 5% 50px 5%;
+
+  @media (min-width: 768px) {
+    grid-column: ~"2/3";
+    grid-row: ~"3/4";
+    margin: 20px 0 0 0;
+  }
 }
 
 .sign__icon {
@@ -14,6 +20,10 @@
   grid-column: ~"1/2";
   grid-row: ~"1/-1";
   margin: 0;
+
+  @media (min-width: 768px) {
+    align-self: center;
+  }
 }
 
 .sign__post {
@@ -23,6 +33,10 @@
   color: #776157;
   font-weight: 500;
   font-size: 14px;
+
+  @media (min-width: 768px) {
+    align-self: flex-end;
+  }
 }
 
 .sign__holder {
@@ -32,4 +46,8 @@
   color: #50220f;
   font-weight: 500;
   font-size: 16px;
+
+  @media (min-width: 768px) {
+    align-self: flex-start;
+  }
 }

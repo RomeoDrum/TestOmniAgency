@@ -1,14 +1,20 @@
 .slider {
   display: flex;
   flex-direction: column;
-  background: #fafafa url("../img/background-1.jpg") no-repeat center top;
+  background: #fafafa url("../img/background-1.png") no-repeat center top;
   width: auto;
   height: auto;
+
+  @media (min-width: 768px) {
+    background: #fafafa url("../img/background-1-tablet.png") no-repeat center top;
+  }
 }
 
 .slider__pagination {
-  margin: 68px auto 16px 15%;
+  margin: 68px auto 0 0;
   display: flex;
+  position: relative;
+  left: 13%;
 }
 
 .slider__pag {
@@ -23,22 +29,48 @@
   margin-right: 22px;
 }
 
+.slider__pag:hover {
+  cursor: pointer;
+}
+
 .slider__pag--active {
   background-color: #fd9f32;
 }
 
+.slider__pag--active::after {
+  content: "";
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 0.5px solid #fd9f32;
+  border-radius: 50%;
+  display: inline-block;
+  top: -12px;
+  left: -16px;
+}
+
 .slider__title {
-  margin: 0 13% 8px 13%;
+  margin: 16px 10% 8px 10%;
   color: #664b42;
   font-weight: 800;
   font-size: 22px;
+
+  @media (min-width: 768px) {
+    width: 30%;
+    margin: 24px auto 8px 12%;
+  }
 }
 
 .slider__text {
   font-weight: 500;
   font-size: 18px;
   color: #664b42;
-  margin: 0 13% 24px 13%;
+  margin: 0 10% 24px 10%;
+
+  @media (min-width: 768px) {
+    width: 24%;
+    margin: 0 auto 32px 12%;
+  }
 }
 
 .slider__button {
@@ -52,4 +84,10 @@
   font-family: "Mulish", sans-serif;
   font-weight: 800;
   font-size: 18px;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    width: 24%;
+    margin: 0 auto 65px 12%;
+  }
 }

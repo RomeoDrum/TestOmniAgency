@@ -1,6 +1,11 @@
 .nav-phone {
   display: flex;
   margin: 18px auto auto auto;
+  text-decoration: none;
+
+  @media (min-width: 768px) {
+    margin: 0 0 auto auto;
+  }
 }
 
 .nav-phone__number {
@@ -15,4 +20,8 @@
   width: 18px;
   height: 18px;
   margin: auto auto auto 10px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }

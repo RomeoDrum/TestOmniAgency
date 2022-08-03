@@ -7,11 +7,27 @@
   font-weight: 700;
   background-color: #ffffff;
   margin-bottom: 16px;
+
+  @media (min-width: 768px) {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: #664b42;
+    margin: auto 0;
+  }
+}
+
+.about__button:hover {
+  cursor: pointer;
 }
 
 .about__list {
   list-style-type: none;
   padding: 0;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .about__item {

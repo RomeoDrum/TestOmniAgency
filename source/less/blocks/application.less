@@ -1,0 +1,83 @@
+.application {
+  display: flex;
+  flex-direction: column;
+}
+
+.application__input {
+  margin: 0 0 16px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  font-family: "Mulish", sans-serif;
+  color: #664b42;
+  background-color: #f2ede6;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 10px 16px 40px;
+}
+
+.application__comments {
+  margin: 0 0 24px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  font-family: "Mulish", sans-serif;
+  background-color: #f2ede6;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 10px 16px 40px;
+}
+
+.application__wrapper {
+  margin: 0 0 40px 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.application__chek {
+  display: none;
+  position: absolute;
+}
+
+.application__chek + .application__label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin: 0 25px 0 0;
+  background-color: #fd9f32;
+  border-radius: 4px;
+  vertical-align: middle;
+  border: solid 2px #ffffff;
+}
+
+.application__chek:checked + .application__label::before {
+  background: #fd9f32 url("../img/icon-chek.svg") no-repeat center center;
+}
+
+.application__label {
+  color: #ffffff;
+}
+
+.application__label a {
+  color: #ffffff;
+}
+
+.application__button {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 120%;
+  background-color: #fd9f32;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  margin: 0 0 48px 0;
+  padding: 16px 0 16px 0;
+  font-family: "Mulish", sans-serif;
+}

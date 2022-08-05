@@ -1,5 +1,11 @@
 .capacity {
   background-color: #fafafa;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 157px 140px;
+  }
 }
 
 .capacity__image {
@@ -7,8 +13,29 @@
   width: 100%;
   height: 200px;
   margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    background: #ffffff url("../img/content-1-tablet.jpg") no-repeat center top;
+    grid-column: ~"1/2";
+    grid-row: ~"1/-1";
+    height: 297px;
+  }
+}
+
+.capacity__title {
+  @media (min-width: 768px) {
+    grid-column: ~"2/3";
+    grid-row: ~"1/2";
+    align-self: flex-end;
+  }
 }
 
 .capacity__text {
   margin-bottom: 63px;
+
+  @media (min-width: 768px) {
+    grid-column: ~"2/3";
+    grid-row: ~"2/3";
+    width: 50%;
+  }
 }

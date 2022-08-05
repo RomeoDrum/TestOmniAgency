@@ -1,8 +1,25 @@
+.types {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    margin: 0 0 140px 0;
+  }
+}
+
 .types__note {
-  background-color: #f4eee5;
   margin: 59px 5% 100px 23%;
-  padding: 38px 24px;
   border-radius: 10px;
+  background: #ffffff url("../img/types-note.png") no-repeat center top;
+  width: 285px;
+  height: 157px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    margin: 68px 5% 74px auto;
+    grid-column: ~"2/3";
+    grid-row: ~"1/2";
+  }
 }
 
 .types__note-title {
@@ -10,27 +27,74 @@
   font-size: 18px;
   line-height: 120%;
   font-family: "Mulish", sans-serif;
-  margin: 0 0 8px 0;
   color: #50220f;
+  margin: 38px auto 8px 22px;
 }
 
 .types__note-text {
-  margin: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 120%;
   color: #664b42;
   font-family: "Mulish", sans-serif;
+  margin: 0 auto auto 22px;
+
+  @media (min-width: 768px) {
+    width: 85%;
+  }
 }
 
 .types__image {
   background: #ffffff url("../img/bag-2.png") no-repeat center top;
-  width: 273px;
-  height: 248px;
+  width: 352px;
+  height: 240px;
   margin: 0 auto 30px auto;
+
+  @media (min-width: 768px) {
+    background: #ffffff url("../img/bag-2-tablet.png") no-repeat center top;
+    width: 564px;
+    height: 384px;
+    grid-column: ~"2/3";
+    grid-row: ~"1/2";
+    margin: 300px 3% auto 0;
+    position: relative;
+    left: -20px;
+  }
+}
+
+.types__title {
+  @media (min-width: 768px) {
+    grid-column: ~"1/2";
+    grid-row: ~"1/2";
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 100%;
+    margin: 381px auto 0 5%;
+    width: 85%;
+  }
+}
+
+.types__text {
+  @media (min-width: 768px) {
+    grid-column: ~"1/2";
+    grid-row: ~"1/2";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    margin: 433px auto 0 5%;
+    width: 90%;
+  }
 }
 
 .types__button {
   margin: 50px auto 100px 5%;
   box-shadow: 13px 4px 30px #cbad9573;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    grid-column: ~"1/2";
+    grid-row: ~"1/2";
+    align-self: flex-start;
+    margin: 549px auto 0 5%;
+  }
 }

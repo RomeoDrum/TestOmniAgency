@@ -4,30 +4,61 @@
   list-style-type: none;
   padding: 0;
   margin: 0 0 50px 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 10%;
+  }
 }
 
 .sort__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: 768px) {
+    margin: 0 25px;
+    width: 43.5%;
+  }
 }
 
 .sort__image {
   width: 90px;
   height: 90px;
   margin-bottom: 16px;
+
+  @media (min-width: 768px) {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 24px;
+  }
 }
 
 .sort__image--1 {
   background: #ffffff url("../img/icon-sort-1.svg") no-repeat center top;
+
+  @media (min-width: 768px) {
+    background: #ffffff url("../img/sort-1-tablet.svg") no-repeat center top;
+  }
 }
 
 .sort__image--2 {
   background: #ffffff url("../img/icon-sort-2.svg") no-repeat center top;
+
+  @media (min-width: 768px) {
+    background: #ffffff url("../img/sort-2-tablet.svg") no-repeat center top;
+  }
 }
 
 .sort__image--3 {
   background: #ffffff url("../img/icon-sort-3.svg") no-repeat center top;
+
+  @media (min-width: 768px) {
+    background: #ffffff url("../img/sort-3-tablet.svg") no-repeat center top;
+  }
 }
 
 .sort__title {
@@ -38,6 +69,12 @@
   line-height: 120%;
   color: #664b42;
   margin: 0 auto 10px auto;
+
+  @media (min-width: 768px) {
+    font-size: 26px;
+    line-height: 110%;
+    width: 100%;
+  }
 }
 
 .sort__text {
@@ -48,4 +85,10 @@
   line-height: 130%;
   color: #664b42;
   margin: 0 auto 50px auto;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 120%;
+    width: 100%;
+  }
 }

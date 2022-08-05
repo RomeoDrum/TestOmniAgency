@@ -8,12 +8,25 @@
   font-size: 26px;
   color: #664b42;
   margin: 0 auto 16px auto;
+
+  @media (min-width: 768px) {
+    font-weight: 800;
+    font-size: 36px;
+  }
 }
 
 .pack__text {
   margin: 0 auto 65px auto;
   text-align: center;
   width: 82%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    width: 35%;
+  }
 }
 
 .pack__list {
@@ -33,6 +46,11 @@
   font-size: 22px;
   line-height: 120%;
   color: #664b42;
+
+  @media (min-width: 768px) {
+    font-size: 26px;
+    margin: 0 auto 18px auto;
+  }
 }
 
 .pack__var {
@@ -40,16 +58,30 @@
   font-size: 18px;
   line-height: 120%;
   color: #50220f;
+
+  @media (min-width: 768px) {
+    font-size: 22px;
+    font-weight: 600;
+  }
 }
 
 .pack__var--truck {
   margin: 0 auto 52px auto;
+
+  @media (min-width: 768px) {
+    margin: 0 auto 45px auto;
+  }
 }
 
 .pack__image--truck {
   background: #ffffff url("../img/truck.png") no-repeat center top;
   width: 100%;
   height: 115px;
+
+  @media (min-width: 768px) {
+    background: #ffffff url("../img/truck-tablet.png") no-repeat center top;
+    height: 254px;
+  }
 }
 
 .pack__image--bags {
@@ -57,12 +89,21 @@
   width: 100%;
   height: 247px;
   margin: 0 auto 0 auto;
+
+  @media (min-width: 768px) {
+    background: #ffffff url("../img/bags-tablet.png") no-repeat center top;
+    height: 338px;
+  }
 }
 
 .pack__var--package {
   position: relative;
   left: 28%;
   margin-left: -35px;
+
+  @media (min-width: 768px) {
+    left: 35%;
+  }
 }
 
 .pack__var--big-bag {
@@ -70,6 +111,10 @@
   left: 50%;
   margin-left: -35px;
   top: -40px;
+
+  @media (min-width: 768px) {
+    left: 48%;
+  }
 }
 
 .pack__var--bag {
@@ -77,4 +122,8 @@
   left: 70%;
   margin-left: -35px;
   top: -45px;
+
+  @media (min-width: 768px) {
+    left: 62%;
+  }
 }

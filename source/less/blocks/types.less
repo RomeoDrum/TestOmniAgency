@@ -1,9 +1,38 @@
 .types {
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 44% 56%;
     grid-template-rows: auto;
     margin: 0 0 140px 0;
+  }
+
+  @media (min-width: 1920px) {
+
+  }
+}
+
+.types::after {
+  @media (min-width: 1920px) {
+    content: "";
+    position: absolute;
+    background: #ffffff url("../img/types-vector-3.svg") no-repeat center top;
+    width: 505px;
+    height: 207px;
+    top: 4870px;
+    left: 24%;
+    z-index: -2;
+  }
+}
+
+.types__note::before {
+  @media (min-width: 1920px) {
+    content: "";
+    position: absolute;
+    background: #fafafa url("../img/types-vector-1.svg") no-repeat center top;
+    width: 100px;
+    height: 100px;
+    top: -115px;
+    left: 40px;
   }
 }
 
@@ -19,6 +48,13 @@
     margin: 68px 5% 74px auto;
     grid-column: ~"2/3";
     grid-row: ~"1/2";
+  }
+
+  @media (min-width: 1920px) {
+    margin: 0;
+    position: relative;
+    top: -20px;
+    left: 55%;
   }
 }
 
@@ -60,6 +96,26 @@
     position: relative;
     left: -20px;
   }
+
+  @media (min-width: 1920px) {
+    background: #ffffff url("../img/bag-2-desktop.png") no-repeat center top;
+    width: 677px;
+    height: 461px;
+    position: static;
+  }
+}
+
+.types__title::before {
+  @media (min-width: 1920px) {
+    content: "";
+    position: absolute;
+    background: #ffffff url("../img/types-vector-2.svg") no-repeat center top;
+    width: 780px;
+    height: 375px;
+    top: 4200px;
+    left: 24%;
+    z-index: -2;
+  }
 }
 
 .types__title {
@@ -72,6 +128,10 @@
     margin: 381px auto 0 5%;
     width: 85%;
   }
+
+  @media (min-width: 1920px) {
+    margin: 414px auto auto 374px;
+  }
 }
 
 .types__text {
@@ -83,6 +143,11 @@
     line-height: 120%;
     margin: 433px auto 0 5%;
     width: 90%;
+  }
+
+  @media (min-width: 1920px) {
+    margin: 466px auto auto 374px;
+    width: 50%;
   }
 }
 
@@ -97,4 +162,12 @@
     align-self: flex-start;
     margin: 549px auto 0 5%;
   }
+
+  @media (min-width: 1920px) {
+    margin: 582px auto auto 374px;
+  }
+}
+
+.types__button:hover {
+  box-shadow: 3px 4px 30px #cbad95cc, 13px 4px 30px #cbad9573;
 }

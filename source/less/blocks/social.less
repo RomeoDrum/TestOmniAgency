@@ -19,6 +19,7 @@
 
 .social__item:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 
 .social__item--tg {
@@ -84,6 +85,11 @@
     margin: 0;
     justify-self: flex-start;
     align-self: flex-end;
+  }
+
+  @media (min-width: 1920px) {
+    grid-column: ~"3/4";
+    grid-row: ~"2/3";
   }
 }
 

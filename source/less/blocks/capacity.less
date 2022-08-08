@@ -6,6 +6,10 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 157px 140px;
   }
+
+  @media (min-width: 1920px) {
+    grid-template-rows: 225px 225px;
+  }
 }
 
 .capacity__image {
@@ -20,6 +24,12 @@
     grid-row: ~"1/-1";
     height: 297px;
   }
+
+  @media (min-width: 1920px) {
+    background: #fafafa url("../img/content-1-desktop.jpg") no-repeat center top;
+    height: 449px;
+    justify-content: flex-end;
+  }
 }
 
 .capacity__title {
@@ -27,6 +37,10 @@
     grid-column: ~"2/3";
     grid-row: ~"1/2";
     align-self: flex-end;
+  }
+
+  @media (min-width: 1920px) {
+    margin: auto auto 0 141px;
   }
 }
 
@@ -37,5 +51,9 @@
     grid-column: ~"2/3";
     grid-row: ~"2/3";
     width: 50%;
+  }
+
+  @media (min-width: 1920px) {
+    margin: 16px auto auto 141px;
   }
 }

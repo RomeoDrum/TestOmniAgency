@@ -4,6 +4,24 @@
     grid-template-columns: 35% 65%;
     grid-template-rows: auto;
   }
+
+  @media (min-width: 1920px) {
+    grid-template-columns: 45% 27.5% auto;
+    grid-template-rows: auto;
+  }
+}
+
+.clearing::after {
+  @media (min-width: 1920px) {
+    content: "";
+    position: absolute;
+    top: 2590px;
+    left: 26%;
+    background: #ffffff url("../img/clearing-vector-2.svg") no-repeat center top;
+    width: 780px;
+    height: 313px;
+    z-index: -2;
+  }
 }
 
 .clearing__note {
@@ -19,6 +37,25 @@
     background: #ffffff url("../img/clearing-note.png") no-repeat center top;
     width: 240px;
     height: 112px;
+  }
+
+  @media (min-width: 1920px) {
+    grid-column: ~"3/4";
+    grid-row: ~"1/2";
+    position: static;
+    margin: 187px auto auto 85px;
+  }
+}
+
+.clearing__note::after {
+  @media (min-width: 1920px) {
+    content: "";
+    position: absolute;
+    top: 2935px;
+    left: 69%;
+    background: #ffffff url("../img/clearing-vector-1.svg") no-repeat center top;
+    width: 173px;
+    height: 40px;
   }
 }
 
@@ -56,6 +93,14 @@
     grid-row: ~"1/-1";
     margin: 130px 0 50px 0;
   }
+
+  @media (min-width: 1920px) {
+    background: #ffffff url("../img/bag-1-desktop.png") no-repeat center top;
+    width: 525px;
+    height: 477px;
+    grid-column: ~"2/3";
+    grid-row: ~"1/2";
+  }
 }
 
 .clearing__title {
@@ -63,6 +108,12 @@
     grid-column: ~"1/2";
     grid-row: ~"1/-1";
     margin: 291px auto 16px 5%;
+  }
+
+  @media (min-width: 1920px) {
+    grid-column: ~"1/2";
+    grid-row: ~"1/2";
+    margin: 300px 170px auto auto;
   }
 }
 
@@ -74,5 +125,24 @@
     grid-row: ~"1/-1";
     margin: 343px auto auto 5%;
     width: 90%;
+  }
+
+  @media (min-width: 1920px) {
+    grid-column: ~"1/2";
+    grid-row: ~"1/2";
+    margin: 360px 97px auto auto;
+    width: 40%;
+  }
+}
+
+.clearing__text::after {
+  @media (min-width: 1920px) {
+    content: "";
+    position: absolute;
+    top: 3090px;
+    left: 26%;
+    background: #ffffff url("../img/clearing-vector-3.svg") no-repeat center top;
+    width: 2px;
+    height: 102px;
   }
 }

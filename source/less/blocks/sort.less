@@ -12,6 +12,24 @@
     justify-content: center;
     margin: 0 10%;
   }
+
+  @media (min-width: 1920px) {
+    flex-wrap: nowrap;
+    margin: 0 8% 140px 20%;
+  }
+}
+
+.sort__list::after {
+  @media (min-width: 1920px) {
+    content: "";
+    position: absolute;
+    top: 3525px;
+    left: 26%;
+    background: #ffffff url("../img/sort-vector.svg") no-repeat center top;
+    width: 780px;
+    height: 260px;
+    z-index: -2;
+  }
 }
 
 .sort__item {
@@ -34,6 +52,10 @@
     width: 120px;
     height: 120px;
     margin-bottom: 24px;
+  }
+
+  @media (min-width: 1920px) {
+    align-self: flex-start;
   }
 }
 
@@ -75,6 +97,10 @@
     line-height: 110%;
     width: 100%;
   }
+
+  @media (min-width: 1920px) {
+    text-align: left;
+  }
 }
 
 .sort__text {
@@ -90,5 +116,12 @@
     font-size: 18px;
     line-height: 120%;
     width: 100%;
+  }
+
+  @media (min-width: 1920px) {
+    margin: 0;
+    text-align: left;
+    width: 95%;
+    align-self: flex-start;
   }
 }

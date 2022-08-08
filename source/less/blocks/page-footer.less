@@ -9,6 +9,12 @@
     grid-template-rows: 50% 70px 48px auto;
     padding: 35px 3% 31px 3%;
   }
+
+  @media (min-width: 1920px) {
+    grid-template-columns: 22% 56% 22%;
+    grid-template-rows: auto auto auto auto;
+    padding: 0 0 50px 0;
+  }
 }
 
 .page-footer__logo-tablet {
@@ -21,6 +27,22 @@
     height: 107px;
     grid-column: ~"1/2";
     grid-row: ~"1/2";
+  }
+
+  @media (min-width: 1920px) {
+    display: none;
+  }
+}
+
+.page-footer__logo-desktop {
+  @media (min-width: 1920px) {
+    display: block;
+    background: #ece2d4 url("../img/footer-logo-desktop.png") no-repeat center top;
+    width: 210px;
+    height: 134px;
+    grid-column: ~"1/2";
+    grid-row: ~"1/2";
+    margin: 54px auto auto 149px;
   }
 }
 
@@ -35,6 +57,12 @@
     grid-row: ~"2/3";
     margin: 0;
     height: auto;
+  }
+
+  @media (min-width: 1920px) {
+    grid-column: ~"3/4";
+    grid-row: ~"1/2";
+    margin: 97px auto auto 0;
   }
 }
 
@@ -67,6 +95,10 @@
   }
 }
 
+.page-footer__phone:hover {
+  opacity: 0.8;
+}
+
 .page-footer__mail {
   margin: 8px 0 0 auto;
   font-weight: 700;
@@ -80,6 +112,10 @@
     font-weight: 600;
     font-size: 22px;
   }
+}
+
+.page-footer__mail:hover {
+  opacity: 0.8;
 }
 
 .page-footer__aliexpress {
@@ -97,6 +133,16 @@
     grid-row: ~"4/5";
     margin: 16px 12% 0 auto;
   }
+
+  @media (min-width: 1920px) {
+    grid-column: ~"3/4";
+    grid-row: ~"3/4";
+    margin: 24px 134px auto auto;
+  }
+}
+
+.page-footer__aliexpress:hover {
+  opacity: 0.8;
 }
 
 .page-footer__list {
@@ -111,6 +157,13 @@
     flex-wrap: nowrap;
     padding: 0 0 0 130px;
   }
+
+  @media (min-width: 1920px) {
+    grid-column: ~"2/3";
+    grid-row: ~"1/-1";
+    padding: 0;
+    margin: 100px auto auto 230px;
+  }
 }
 
 .page-footer__item {
@@ -122,6 +175,12 @@
   @media (min-width: 768px) {
     border: none;
     margin: 0 70px 0 0;
+  }
+
+  @media (min-width: 1920px) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px 0 0;
   }
 }
 
@@ -138,6 +197,10 @@
   @media (min-width: 768px) {
     padding: 0;
     margin: 0 0 16px 0;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 26px;
   }
 }
 
@@ -165,6 +228,14 @@
     padding: 0;
     margin: 0 0 8px 0;
   }
+
+  @media (min-width: 1920px) {
+    margin: 0 0 16px 0;
+  }
+}
+
+.page-footer__article:hover {
+  opacity: 0.8;
 }
 
 .page-footer__link {

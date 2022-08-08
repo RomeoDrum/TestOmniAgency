@@ -1,8 +1,12 @@
 .transfer {
-  margin: 70px 0 0 0;
+  margin: 40px 0 0 0;
 
   @media (min-width: 768px) {
-    margin: 110px 0 0 0;
+    margin: 50px 0 0 0;
+  }
+
+  @media (min-width: 1920px) {
+    margin: 60px 0 0 0;
   }
 }
 
@@ -23,6 +27,10 @@
   @media (min-width: 768px) {
     width: 30%;
   }
+
+  @media (min-width: 1920px) {
+    width: 16%;
+  }
 }
 
 .transfer__button {
@@ -41,4 +49,13 @@
     background: #ffffff url("../img/map-tablet.png") no-repeat center top;
     height: 740px;
   }
+
+  @media (min-width: 1920px) {
+    background: #ffffff url("../img/map-desktop.png") no-repeat center top;
+    height: 841px;
+  }
+}
+
+.transfer__button:hover {
+  box-shadow: 3px 4px 30px #cbad95cc, 13px 4px 30px #cbad9573;
 }

@@ -2,11 +2,24 @@
   display: flex;
   flex-direction: column;
   background-color: #fafafa;
+
+  @media (min-width: 1920px) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 0 3% 140px 3%;
+    column-gap: 3.5%;
+  }
 }
 
 .intro__wrapper {
   display: flex;
   flex-wrap: nowrap;
+
+  @media (min-width: 1920px) {
+    grid-column: ~"1/-1";
+    grid-row: ~"1/2";
+  }
 }
 
 .intro__logo {
@@ -17,7 +30,11 @@
   @media (min-width: 768px) {
     width: 197px;
     height: 252px;
-    margin: 0 0 0 2%;
+    margin: 0 0 0 3%;
+  }
+
+  @media (min-width: 1920px) {
+    margin: 0 0 0 1.5%;
   }
 }
 
@@ -31,6 +48,11 @@
     line-height: 95%;
     width: 70%;
     margin: 104px auto auto 16px;
+  }
+
+  @media (min-width: 1920px) {
+    margin: 65px auto auto 16px;
+    width: 40%;
   }
 }
 

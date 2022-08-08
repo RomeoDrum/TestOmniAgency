@@ -20,6 +20,7 @@
   }
 
   .main-nav__lang {
+    cursor: pointer;
     order: 1;
   }
 
@@ -256,5 +257,43 @@
     text-decoration: none;
     font-size: 22px;
     font-weight: 700;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main-nav::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 70px;
+    left: 10%;
+    right: 58%;
+    height: 1px;
+    background: #a4a4a4;
+  }
+
+  .main-nav::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 70px;
+    left: 58%;
+    right: 10%;
+    height: 1px;
+    background: #a4a4a4;
+  }
+
+  .main-nav__wrapper {
+    padding: 30px 12% 0 12%;
+  }
+
+  .main-nav__social-list {
+    margin: 0 auto auto 12%;
+    order: 2;
+    padding: 0;
+  }
+
+  .main-nav__search {
+    margin: 0 0 auto 8%;
   }
 }

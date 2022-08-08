@@ -9,6 +9,10 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 157px 140px;
   }
+
+  @media (min-width: 1920px) {
+    grid-template-rows: auto auto;
+  }
 }
 
 .lines__title {
@@ -19,6 +23,10 @@
     grid-row: ~"1/2";
     align-self: flex-end;
   }
+
+  @media (min-width: 1920px) {
+    margin: auto auto 16px 149px;
+  }
 }
 
 .lines__text {
@@ -28,6 +36,11 @@
     grid-column: ~"2/3";
     grid-row: ~"2/3";
     width: 75%;
+  }
+
+  @media (min-width: 1920px) {
+    margin: 0 auto auto 149px;
+    width: 40%;
   }
 }
 
@@ -41,5 +54,11 @@
     grid-column: ~"1/2";
     grid-row: ~"1/-1";
     height: 297px;
+  }
+
+  @media (min-width: 1920px) {
+    background: #fafafa url("../img/content-2-desktop.jpg") no-repeat center top;
+    height: 449px;
+    justify-content: flex-end;
   }
 }

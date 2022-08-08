@@ -3,6 +3,19 @@
   flex-direction: column;
 }
 
+.pack::after {
+  @media (min-width: 1920px) {
+    content: "";
+    position: absolute;
+    background: #ffffff url("../img/pack-vector-2.svg") no-repeat center top;
+    width: 2px;
+    height: 100px;
+    top: 6300px;
+    left: 50%;
+    z-index: 5;
+  }
+}
+
 .pack__header {
   font-weight: 700;
   font-size: 26px;
@@ -26,6 +39,11 @@
   @media (min-width: 768px) {
     font-size: 18px;
     width: 35%;
+  }
+
+  @media (min-width: 1920px) {
+    width: 19%;
+    margin: 0 auto 88px auto;
   }
 }
 
@@ -51,6 +69,10 @@
     font-size: 26px;
     margin: 0 auto 18px auto;
   }
+
+  @media (min-width: 1920px) {
+    margin: 0 auto 20px auto;
+  }
 }
 
 .pack__var {
@@ -71,6 +93,10 @@
   @media (min-width: 768px) {
     margin: 0 auto 45px auto;
   }
+
+  @media (min-width: 1920px) {
+    margin: 0 auto 50px auto;
+  }
 }
 
 .pack__image--truck {
@@ -81,6 +107,11 @@
   @media (min-width: 768px) {
     background: #ffffff url("../img/truck-tablet.png") no-repeat center top;
     height: 254px;
+  }
+
+  @media (min-width: 1920px) {
+    background: #ffffff url("../img/truck-desktop.png") no-repeat center top;
+    height: 300px;
   }
 }
 
@@ -94,6 +125,11 @@
     background: #ffffff url("../img/bags-tablet.png") no-repeat center top;
     height: 338px;
   }
+
+  @media (min-width: 1920px) {
+    background: #ffffff url("../img/bags-desktop.png") no-repeat center top;
+    height: 428px;
+  }
 }
 
 .pack__var--package {
@@ -103,6 +139,10 @@
 
   @media (min-width: 768px) {
     left: 35%;
+  }
+
+  @media (min-width: 1920px) {
+    left: 40%;
   }
 }
 
@@ -125,5 +165,9 @@
 
   @media (min-width: 768px) {
     left: 62%;
+  }
+
+  @media (min-width: 1920px) {
+    left: 58%;
   }
 }

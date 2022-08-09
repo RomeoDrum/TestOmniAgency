@@ -1,8 +1,9 @@
 .application {
   display: flex;
   flex-direction: column;
+  z-index: 3;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     grid-column: ~"1/-1";
     grid-row: ~"3/4";
     display: grid;
@@ -35,7 +36,7 @@
   align-items: flex-start;
   padding: 16px 10px 16px 40px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     width: auto;
     margin: 0 0 24px 0;
     font-weight: 600;
@@ -44,21 +45,21 @@
 }
 
 .application__name {
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     grid-column: ~"1/2";
     grid-row: ~"1/2";
   }
 }
 
 .application__phone {
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     grid-column: ~"1/2";
     grid-row: ~"2/3";
   }
 }
 
 .application__mail {
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     grid-column: ~"1/2";
     grid-row: ~"3/4";
   }
@@ -78,7 +79,7 @@
   align-items: flex-start;
   padding: 16px 10px 16px 40px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     grid-column: ~"2/3";
     grid-row: ~"1/4";
     width: auto;
@@ -95,7 +96,7 @@
   display: flex;
   flex-wrap: nowrap;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     grid-column: ~"1/-1";
     grid-row: ~"4/5";
     justify-content: center;
@@ -134,7 +135,7 @@
 .application__label {
   color: #ffffff;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     font-family: "Mulish", sans-serif;
     font-weight: 600;
     font-size: 22px;
@@ -144,7 +145,7 @@
 .application__label a {
   color: #ffffff;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     font-family: "Mulish", sans-serif;
     font-weight: 600;
     font-size: 22px;
@@ -165,7 +166,7 @@
   cursor: pointer;
   box-shadow: 13px 4px 30px #cbad9573;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     grid-column: ~"1/-1";
     grid-row: ~"5/6";
     width: 25%;
